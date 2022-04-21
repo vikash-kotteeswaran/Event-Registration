@@ -2,11 +2,64 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Spectra Registration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    
+    <div id = "form-wrapper">
+        <h2>Spectra Registration</h2>
+        <form id = "form">
 
+
+            <label for="name">Name: </label>
+            <div id = "name">
+                <input type = "text" id = "fname" placeholder = "first name"></input>
+                <input type = "text" id = "lname" placeholder = "last name"></input>
+            </div><br>
+
+
+            <label for="collegeName">College: </label>
+            <div id = "collegeName">
+                <input type = "text" id = "collegeName" placeholder = "fullname of your college"></input>
+            </div><br>
+
+
+            <label for="depName">Department: </label>
+            <div id = "depName">
+                <input type = "text" id = "depName" placeholder = "enter department"></input>
+            </div><br>
+
+
+            <label for="events">Events: </label>
+            <div id = "events">
+                
+                <input type = "checkbox" id = "quiz" value = "Quiz"></input>
+                <label for="quiz">Quiz</label>
+                <br>
+                
+                <input type = "checkbox" id = "adzap" value = "Adzap"></input>
+                <label for="adzap">Adzap</label>
+                <br>
+            
+                <input type = "checkbox" id = "paper-presentation" value = "Paper Presentation"></input>
+                <label for="paper-presentation">Paper Presentation</label>
+                <br>
+
+                <input type = "checkbox" id = "photography" value = "Photography"></input>
+                <label for="photography">Photography</label>
+
+            </div><br>
+
+
+            <div id = "sub">
+                <input type = "submit" id = "sub"></input>
+            </div>
+            
+        </form>
+    </div>
 </body>
 
 </html>
