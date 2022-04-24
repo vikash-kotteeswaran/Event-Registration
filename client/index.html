@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Spectra Registration</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    
+    <div id = "form-wrapper">
+        <h2>Spectra Registration</h2>
+        <form id = "form" action = "">
+
+            <div id = "form-body">
+                <label for="name">Name: </label>
+                <div id = "name">
+                    <input type = "text" id = "fname" placeholder = "first name"></input>
+                    <input type = "text" id = "lname" placeholder = "last name"></input>
+                </div><br>
+
+
+                <label for="collegeName">College: </label>
+                <div id = "collegeName">
+                    <input type = "text" id = "collegeName" placeholder = "fullname of your college"></input>
+                </div><br>
+
+
+                <label for="depName">Department: </label>
+                <div id = "depName">
+                    <input type = "text" id = "depName" placeholder = "enter department"></input>
+                </div><br>
+
+
+                <label for="events">Events: </label>
+                <div id = "events">
+                    
+                    <input type = "checkbox" name = "events" id = "quiz" value = "Quiz"></input>
+                    <label for="quiz">Quiz</label>
+                    <br>
+                    
+                    <input type = "checkbox" name = "events" id = "adzap" value = "Adzap"></input>
+                    <label for="adzap">Adzap</label>
+                    <br>
+                
+                    <input type = "checkbox" name = "events" id = "paper-presentation" value = "Paper Presentation"></input>
+                    <label for="paper-presentation">Paper Presentation</label>
+                    <br>
+
+                    <input type = "checkbox" name = "events" id = "photography" value = "Photography"></input>
+                    <label for="photography">Photography</label>
+
+                </div>
+            </div><br>
+
+            <!-- Change type to submit sooner -->
+            <div id = "sub">
+                <input type = "button" id = "sub" onclick="onClick()" value = "Submit"></input>
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,12 +1,20 @@
 body {
     font-family: sans-serif;
+    background: url('../resources/BG.jpg');
 }
 
 h2 {
     text-align: center;
     padding-bottom: 20px;
+}
 
+#form-body{
+    margin: auto;
+    width: auto;
+}
 
+input {
+    opacity: 75%;
 }
 
 input[type = "text"] {
@@ -20,15 +28,18 @@ input[type = "text"] {
 
 #form-wrapper {
     
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     margin: 8%;
     padding: 30px;
     border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.7);
     
 }
 
+
 input#collegeName {
     width: 25%;
+    
 }
 
 div#events {
