@@ -9,13 +9,28 @@ let onClick = function(){
 
     let events = [...document.querySelectorAll('input[name="events"]:checked')]
     events = events.map(x => x.value)
+    events = events.join(', ')
 
-    let user = {
-        "First Name": fname,
-        "Last Name": lname,
-        "College Name": collegeName,
-        "Dep Name": depName,
-        "Events": events
-    }
+
+    fetch('http://localhost:5000/insert', {
+        headers: {'Content-type': 'application/json'},
+        method: 'POST',
+        body: JSON.stringify({
+            "fn": fname,
+            "ln": lname,
+            "cn": collegeName,
+            "dn": depName,
+            "eves": events
+        })
+    })
+    .then(response => response.json)
+    .then(data => console.log(data['data']))
 
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('http://localhost:5000/getAll')
+    .then(response => response.json())
+    .then(data => console.log(data['data']))
+    // loadHTMLTable([])
+})
