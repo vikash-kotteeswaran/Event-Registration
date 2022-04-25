@@ -54,7 +54,17 @@ class DbService{
             })
 
             console.log(insertId)
-        // return response
+        
+        return {
+            'ID': insertId,
+            'Date': date,
+            'First Name': fn,
+            'Last Name': ln,
+            'College': cn,
+            'Department': dn,
+            "Events": eves
+
+        }
         } catch(err){
             console.log(err)
         }

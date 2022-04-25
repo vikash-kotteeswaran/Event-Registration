@@ -14,8 +14,21 @@ h2 {
     font-size: 22pt;
 }
 
+#admin-button{
+    margin-left: 1300px;
+    margin-top:30px;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: rgb(243, 186, 115);
+    font-size: 12pt;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px rgb(116, 115, 115);
+    text-shadow: 1px 1px 2px rgb(116, 115, 115);
+    background-color: rgb(243, 186, 115);
+}
+
 #form-body{
-    margin: 30px auto;
+    margin: 3px auto;
     margin-left: 400px;
     
 }
@@ -49,7 +62,7 @@ input[type = "text"] {
 #form-wrapper {
     
     /* border: 1px solid #000000; */
-    margin: 80px;
+    margin: 30px 80px;
     padding: 30px;
     border-radius: 10px;
     background-color: rgba(239, 239, 239, 0.7);
@@ -74,12 +87,72 @@ div#sub {
 
 input#sub {
     padding: 5px;
-    width: 100px;
+    width: 113px;
     font-weight: 600;
     font-size: 18pt;
-    border-radius: 20px;
-    border-width: 0px;
+    border-radius: 30px;
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
     text-shadow: 0px 0px 0px;
     color: brown;
+}
+
+
+/* admin.html */
+
+#go-back{
+    margin-left: 1300px;
+    margin-top:30px;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: rgb(243, 186, 115);
+    font-size: 12pt;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px rgb(116, 115, 115);
+    text-shadow: 1px 1px 2px rgb(116, 115, 115);
+    background-color: rgb(243, 186, 115);
+}
+
+table, tr, th, td{
+    border: 2px solid #000000;
+    border-collapse: collapse;
+    background: beige;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgb(216, 214, 211);
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1300px;
+}
+
+table{
+    min-width: 1300px;
+}
+
+thead{
+    white-space: nowrap;
+}
+
+h2#db-table{
+    text-align: left;
+    padding-left: 500px;
+    padding-bottom: 0px;
+}
+
+div#db-table{
+    margin-left: 50px;
+    margin-right: 57.2px;
+    margin-top: 30px;
+    padding: 30px;
+    padding-top: 1px;
+    border-radius: 10px;
+    background-color: rgb(198, 193, 193);
+}
+
+button.delete-row-btn{
+    border-radius: 1000px;
+    border-width: 5px;
+    background-color: red;
+    color: white;
 }
